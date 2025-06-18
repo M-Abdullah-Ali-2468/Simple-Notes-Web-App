@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notes</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="HomeStyle.css">
+    <link rel="stylesheet" href="AddStyle.css">
+    <link rel="stylesheet" href="viewStyle.css">
+
+</head>
+
+<body>
+    <header>
+        <span id="menuBar">
+            <button id="Menu" onclick="toggleMenu()">Menu</button>
+        </span>
+        <div id="centerBrand">
+            <img id="logo" src="C:\Users\4A\Documents\Tip Calculator\SimpleNotesWeb\notepad_7329372.png" alt="Simple Notes Logo" class="logo">
+            <h2 id="logoText">SimpleNotes</h2>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <ul class="Notes">
+                <li class="feature" ><a href="AddNotes.html" id="linkpage">Add Notes</a></li>
+                <li class="feature"><a href="ViewNotes.html" id="linkpage">View Saved Notes</a></li>
+            </ul>
+        </div>
+        <div class="maincontent" id="maincontents">
+            <p id="mainText">Simple Notes! Your Personal Notes Taker</p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 Simple Notes. All rights reserved.</p>
+            <nav>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a> |
+                <a href="mailto:support@simplenotes.com">Contact Support</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+<script src="HomeScript.js"></script>
+<script src="AddScript.js"></script>
+<script src="viewScript.js"></script>
+
+</html>
