@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Notes</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="HomeStyle.css">
+  <link rel="stylesheet" href="AddStyle.css">
+
+  <!-- Quill CSS (Snow theme) -->
+  <link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <span id="menuBar">
+      <button id="Menu" onclick="toggleMenu()">Menu</button>
+    </span>
+    <div id="centerBrand">
+      <img id="logo" src="notepad_7329372.png" alt="Simple Notes Logo" class="logo">
+      <h2 id="logoText">SimpleNotes</h2>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <ul class="Notes">
+        <li class="feature"><a href="Home.html" id="linkpage">Home</a></li>
+        <li class="feature"><a href="ViewNotes.html" id="linkpage" onclick="displayNotes()">View Saved Notes</a></li>
+      </ul>
+    </div>
+
+    <div class="maincontent" id="maincontents">
+      <p id="mainText">Hey there! Start Writing Your Note</p>
+
+      <!-- Quill Editor Container -->
+      <div class="editorContainer">
+        <label for="noteTitle" class="note-title-label">Add Notes' Title:</label>
+        <input type="text" id="noteTitle" placeholder="Note Title" class="note-title" required>
+      </div>
+      <div id="editor" style="height: 300px;">
+        <p>Write your notes here...</p>
+      </div>
+
+      <!-- Save Button -->
+      <button id="saveButton" onclick="saveNote()">Save Note</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <footer>
+      <p>&copy; 2024 Simple Notes. All rights reserved.</p>
+      <nav>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="mailto:support@simplenotes.com">Contact Support</a>
+      </nav>
+    </footer>
+  </div>
+
+  <!-- Quill JS -->
+  <script src="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.min.js"></script>
+
+  <!-- Your Custom Scripts -->
+
+<script src="HomeScript.js"></script>
+<script src="viewScript.js"></script>
+<script src="addScript.js"></script>
+</body>
+</html>

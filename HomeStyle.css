@@ -65,6 +65,7 @@ header {
     display: flex;
     min-height: 80vh;
     background: #000;
+    height: auto;
 }
 
 /* Sidebar */
@@ -74,7 +75,9 @@ header {
     color: #00cfff;
     padding: 20px 10px;
     box-shadow: 2px 0 10px rgba(0, 207, 255, 0.1);
+     transition: all 0.5s ease-in-out;
 }
+
 
 .sidebar ul {
     list-style: none;
@@ -119,6 +122,7 @@ header {
     box-shadow: inset 0 0 12px rgba(0, 207, 255, 0.05);
     overflow-y: auto;
     border-left: 2px solid #00cfff;
+    height: auto;
 }
 
 .maincontent h1 {
@@ -163,4 +167,21 @@ footer a:hover {
     color: #00cfff;
     text-shadow: 0 0 8px rgba(0, 207, 255, 0.5);
     cursor: pointer;
+}
+
+/* Intro Text Styling */
+.intro {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #b0ecff;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 207, 255, 0.03);
+    border-left: 3px solid #00cfff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 207, 255, 0.05);
 }

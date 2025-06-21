@@ -1,0 +1,41 @@
+#saveButton {
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    background-color: #002f3f;
+    color: #00cfff;
+}
+
+#saveButton:hover{
+cursor: pointer;
+    transform: translateY(-1px);
+    transition: 0.3s ease;
+    background-color: #00cfff;
+    color: #000;
+    box-shadow: 2px 2px 8px #00cfff;
+}
+
+.ql-toolbar.ql-snow {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    padding: 8px;
+    background-color: #42d5ff;
+}
+
+
+.editorContainer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#noteTitle {
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    height: 25px;
+    margin-left: 10px;
+}

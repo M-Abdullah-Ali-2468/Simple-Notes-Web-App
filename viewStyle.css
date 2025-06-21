@@ -1,0 +1,116 @@
+.noteItem {
+    
+    min-height: 150px;
+    max-height: 200px;
+    width: 150px;
+    background-color: aqua;
+    margin-top: 10px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid cornflowerblue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+}
+
+.noteList {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding:20px;
+    margin-left:50px;
+}
+
+.noteItem:hover{
+    
+     cursor: pointer;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    background-color: #00cfff;
+    color: #000;
+    box-shadow: 2px 2px 8px #00cfff;
+    
+
+}
+.dataInside {
+    color: black  !important; 
+    margin-top: 10px;
+    padding:2px;
+}
+
+.action-button {
+    width: 100px;
+    height: 30px;
+    display: none;
+    margin: 6px auto;
+    background-color: #002f3f;
+    color: #00cfff;
+    border: 1px solid #00cfff;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Show buttons on hover of parent */
+.noteItem:hover .action-button {
+    display: flex;
+}
+
+/* Optional hover effect */
+.action-button:hover {
+    background-color: #e3f2f5;
+    color: #000;
+    box-shadow: 0px 4px 12px rgba(0, 207, 255, 0.4);
+    transform: translateY(-2px);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#popup {
+    background-color: rgb(14, 39, 56);
+    color: black;
+    position: relative;
+    min-height: 100px;
+    z-index: 1000;
+    margin-top: 30px;
+    border: 3px solid skyblue;
+    border-radius: 22px;
+    max-height: 1000px;
+    width: 600px;
+    margin-left:20%;
+    display: none;
+    padding:10px;
+}
+
+#closePopup {
+   background-color: white;
+   color:red;
+   border: none;
+   font-size: large;
+   margin-left: 80%;
+}
+
+#closePopup:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color:black;
+    background-color: red;
+}
+
+
+#popup_data {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style-position: inside;   /* ✅ Makes bullets appear inside the box */
+    overflow-wrap: break-word;     /* ✅ Ensures long text wraps */
+}
